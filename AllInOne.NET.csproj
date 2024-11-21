@@ -116,5 +116,11 @@
   <ItemGroup>
     <None Include="Resources\SSINC LOGO.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trump.png.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\South Hills Logo.png.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

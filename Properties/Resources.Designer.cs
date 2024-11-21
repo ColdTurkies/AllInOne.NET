@@ -63,9 +63,29 @@ namespace AllInOne.NET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap South_Hills_Logo_png {
+            get {
+                object obj = ResourceManager.GetObject("South Hills Logo.png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap SSINC_LOGO {
             get {
                 object obj = ResourceManager.GetObject("SSINC LOGO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trump_png {
+            get {
+                object obj = ResourceManager.GetObject("trump.png", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

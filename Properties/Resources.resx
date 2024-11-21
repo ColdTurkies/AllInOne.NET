@@ -121,4 +121,10 @@
   <data name="SSINC LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SSINC LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="trump.png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trump.png.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="South Hills Logo.png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\South Hills Logo.png.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

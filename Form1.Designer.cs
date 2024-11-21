@@ -49,8 +49,8 @@
             this.txtFileDialogue = new System.Windows.Forms.TextBox();
             this.btnChangeBGColor = new System.Windows.Forms.Button();
             this.picChangablePicture = new System.Windows.Forms.PictureBox();
-            this.cboImages = new System.Windows.Forms.ComboBox();
             this.txtCSV4 = new System.Windows.Forms.TextBox();
+            this.changeImage = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picChangablePicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,6 +89,7 @@
             this.btnWriteDataToFile.TabIndex = 3;
             this.btnWriteDataToFile.Text = "Write Data To A File";
             this.btnWriteDataToFile.UseVisualStyleBackColor = true;
+            this.btnWriteDataToFile.Click += new System.EventHandler(this.btnWriteDataToFile_Click);
             // 
             // btnReadCSV
             // 
@@ -158,6 +159,7 @@
             this.btnReadDataInFile.TabIndex = 11;
             this.btnReadDataInFile.Text = "Reads Data In File";
             this.btnReadDataInFile.UseVisualStyleBackColor = true;
+            this.btnReadDataInFile.Click += new System.EventHandler(this.btnReadDataInFile_Click);
             // 
             // btnWriteRegistryValue
             // 
@@ -187,6 +189,7 @@
             this.btnDeleteDataInFile.TabIndex = 15;
             this.btnDeleteDataInFile.Text = "Deletes Data In File";
             this.btnDeleteDataInFile.UseVisualStyleBackColor = true;
+            this.btnDeleteDataInFile.Click += new System.EventHandler(this.btnDeleteDataInFile_Click);
             // 
             // btnUpdateDataInFile
             // 
@@ -196,6 +199,7 @@
             this.btnUpdateDataInFile.TabIndex = 14;
             this.btnUpdateDataInFile.Text = "Update Data In A File";
             this.btnUpdateDataInFile.UseVisualStyleBackColor = true;
+            this.btnUpdateDataInFile.Click += new System.EventHandler(this.btnUpdateDataInFile_Click);
             // 
             // txtFilePath
             // 
@@ -206,16 +210,17 @@
             // 
             // btnOpenFileDialogue
             // 
-            this.btnOpenFileDialogue.Location = new System.Drawing.Point(436, 216);
+            this.btnOpenFileDialogue.Location = new System.Drawing.Point(435, 216);
             this.btnOpenFileDialogue.Name = "btnOpenFileDialogue";
-            this.btnOpenFileDialogue.Size = new System.Drawing.Size(189, 32);
+            this.btnOpenFileDialogue.Size = new System.Drawing.Size(189, 49);
             this.btnOpenFileDialogue.TabIndex = 17;
             this.btnOpenFileDialogue.Text = "Use the Open File Dialogue";
             this.btnOpenFileDialogue.UseVisualStyleBackColor = true;
+            this.btnOpenFileDialogue.Click += new System.EventHandler(this.btnOpenFileDialogue_Click);
             // 
             // txtFileDialogue
             // 
-            this.txtFileDialogue.Location = new System.Drawing.Point(436, 250);
+            this.txtFileDialogue.Location = new System.Drawing.Point(436, 271);
             this.txtFileDialogue.Name = "txtFileDialogue";
             this.txtFileDialogue.Size = new System.Drawing.Size(100, 22);
             this.txtFileDialogue.TabIndex = 18;
@@ -228,23 +233,17 @@
             this.btnChangeBGColor.TabIndex = 19;
             this.btnChangeBGColor.Text = "Use the Color Dialogue to Change BG Color";
             this.btnChangeBGColor.UseVisualStyleBackColor = true;
+            this.btnChangeBGColor.Click += new System.EventHandler(this.btnChangeBGColor_Click);
             // 
             // picChangablePicture
             // 
-            this.picChangablePicture.Image = global::AllInOne.NET.Properties.Resources.SSINC_LOGO;
+            this.picChangablePicture.Image = global::AllInOne.NET.Properties.Resources.South_Hills_Logo_png;
             this.picChangablePicture.Location = new System.Drawing.Point(631, 68);
             this.picChangablePicture.Name = "picChangablePicture";
             this.picChangablePicture.Size = new System.Drawing.Size(140, 142);
+            this.picChangablePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picChangablePicture.TabIndex = 20;
             this.picChangablePicture.TabStop = false;
-            // 
-            // cboImages
-            // 
-            this.cboImages.FormattingEnabled = true;
-            this.cboImages.Location = new System.Drawing.Point(631, 25);
-            this.cboImages.Name = "cboImages";
-            this.cboImages.Size = new System.Drawing.Size(121, 24);
-            this.cboImages.TabIndex = 21;
             // 
             // txtCSV4
             // 
@@ -253,13 +252,23 @@
             this.txtCSV4.Size = new System.Drawing.Size(154, 22);
             this.txtCSV4.TabIndex = 22;
             // 
+            // changeImage
+            // 
+            this.changeImage.Location = new System.Drawing.Point(631, 27);
+            this.changeImage.Name = "changeImage";
+            this.changeImage.Size = new System.Drawing.Size(140, 35);
+            this.changeImage.TabIndex = 23;
+            this.changeImage.Text = "Change Image";
+            this.changeImage.UseVisualStyleBackColor = true;
+            this.changeImage.Click += new System.EventHandler(this.changeImage_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.changeImage);
             this.Controls.Add(this.txtCSV4);
-            this.Controls.Add(this.cboImages);
             this.Controls.Add(this.picChangablePicture);
             this.Controls.Add(this.btnChangeBGColor);
             this.Controls.Add(this.txtFileDialogue);
@@ -312,8 +321,8 @@
         private System.Windows.Forms.TextBox txtFileDialogue;
         private System.Windows.Forms.Button btnChangeBGColor;
         private System.Windows.Forms.PictureBox picChangablePicture;
-        private System.Windows.Forms.ComboBox cboImages;
         private System.Windows.Forms.TextBox txtCSV4;
+        private System.Windows.Forms.Button changeImage;
     }
 }
 
